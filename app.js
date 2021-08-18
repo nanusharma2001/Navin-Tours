@@ -8,6 +8,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const cors = require('cors');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -22,6 +23,10 @@ app.enable('trust proxy');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 //1. Global Middlewares
+//Implement CORS
+app.use(cors());
+//sets our header "Access-Control-Allow-Origin" to * (means everything ie can come from anywhere)
+app.options('*', cors());
 //Serving Static files
 app.use(express.static(path.join(__dirname, 'public'))); //To set route for static files(html,css... ect)
 //Set Security HTTP headers
