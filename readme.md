@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">An awesome tour booking site and RESTful API built on top of <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>.</h4>
+<h4 align="center">An awesome tour booking site and RESTful API built on top of <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>. Developed using MVC pattern and implemented all CRUD operations for every model.</h4>
 
  <p align="center">
  <a href="#deployed-version">Demo</a> •
@@ -96,7 +96,7 @@ Before using the API, you need to set the variables in Postman depending on your
 - {{password}} with your user password as value.
 ```
 
-Check [Navin-Tours API Documentation](https://documenter.getpostman.com/view/8689170/SVmzvwpY?version=latest) for more info.
+Check [Navin-Tours API Documentation](https://documenter.getpostman.com/view/16464394/TzzBpvNb) for more info.
 
 <b> API Features: </b>
 
