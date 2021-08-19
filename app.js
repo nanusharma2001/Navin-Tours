@@ -16,6 +16,7 @@ const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
+const bookingController = require('./controllers/bookingController');
 const viewRouter = require('./routes/viewRoutes');
 
 const app = express();
@@ -46,6 +47,11 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again in an hour.',
 });
 app.use('/api', limiter); //limiter is a middleware and it will now act on all routes with /api in it
+app.exports(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  bookingController.webhookCheckout
+);
 //BODY parser=> reading data from the body into req.body
 app.use(express.json({ limit: '10kb' })); //Using Middleware
 app.use(express.urlencoded({ extended: true, limit: '10kb' })); //
