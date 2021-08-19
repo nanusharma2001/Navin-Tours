@@ -40,27 +40,27 @@ Live demo (Feel free to visit) 👉 : https://navin-tours.herokuapp.com/
 
 #### Home Page :
 
-![Navin-ToursHomePageonline-video-cutt](https://user-images.githubusercontent.com/58518192/72606801-7ebe0680-3949-11ea-8e88-613f022a64e5.gif)
+![AllTours](https://user-images.githubusercontent.com/59772521/130118531-42d6552b-77e5-40d2-939e-d623627d75e7.gif)
 
 #### Tour Details :
 
-![tourOverviewonline-video-cutterc](https://user-images.githubusercontent.com/58518192/72606859-a0b78900-3949-11ea-8f0d-ef44c789957b.gif)
+![TourInfo](https://user-images.githubusercontent.com/59772521/130122338-838d8865-2090-48ea-914a-3257d19594b1.gif)
 
 #### Payment Process :
-
-![paymentprocess-1-ycnhrceamp4-7fW](https://user-images.githubusercontent.com/58518192/72606973-d9eff900-3949-11ea-9a2e-f84a6581bef3.gif)
+![payment](https://user-images.githubusercontent.com/59772521/130123598-698b269d-522a-4259-86de-2604704b6497.gif)
 
 #### Booked Tours :
 
-![rsz_bookedtours](https://user-images.githubusercontent.com/58518192/72607747-6a7b0900-394b-11ea-8b9f-5330531ca2eb.png)
+![UsersBooking](https://user-images.githubusercontent.com/59772521/130120604-2cfc87f6-9502-4d28-9331-7ca2090343fb.gif)
 
 #### User Profile :
 
-![rsz_userprofile](https://user-images.githubusercontent.com/58518192/72607635-44edff80-394b-11ea-8943-64c48f6f19aa.png)
+![UserProfile](https://user-images.githubusercontent.com/59772521/130120085-8fe33651-76a1-42d8-8dc2-052020faac33.gif)
 
 #### Admin Profile :
 
-![rsz_adminprofile](https://user-images.githubusercontent.com/58518192/72607648-4d463a80-394b-11ea-972f-a73160cfaa5b.png)
+![Admin profile](https://user-images.githubusercontent.com/59772521/130119358-0fe596a4-ebde-4023-b985-b4a9094224d2.gif)
+
 
 ## How To Use
 
@@ -184,4 +184,5 @@ Please enjoy and feel free to share your opinion, constructive criticism, or com
 - Improve overall UX/UI and fix bugs
 - Featured Tours
 - Recently Viewed Tours
-- And More ! There's always room for improvement!
+- And More ! There's always room for improvement!!!
+
