@@ -47,7 +47,7 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again in an hour.',
 });
 app.use('/api', limiter); //limiter is a middleware and it will now act on all routes with /api in it
-app.exports(
+app.post(
   '/webhook-checkout',
   express.raw({ type: 'application/json' }),
   bookingController.webhookCheckout
