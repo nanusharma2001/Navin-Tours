@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: navin-tours
+    env: node
+    buildCommand: npm install && npm run build:js
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE
+        fromDatabase:
+          name: navin-tours-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 90d
+      - key: JWT_COOKIE_EXPIRES_IN
+        value: 90
+
+databases:
+  - name: navin-tours-db
+    databaseName: navin-tours
+    user: navin-tours-user

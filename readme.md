@@ -110,25 +110,47 @@ Get Tours Within Radius 👉 https://navin-tours.herokuapp.com/api/v1/tours/tour
 
 ## Deployment
 
-The website is deployed with git into heroku. Below are the steps taken:
+The website can be deployed for free on Render.com. Below are the steps:
 
-```
+### Deploy to Render.com (Free):
+
+1. **Prepare your repository:**
+```bash
 git init
 git add -A
-git commit -m "Commit message"
+git commit -m "Initial commit for Render deployment"
+```
+
+2. **Push to GitHub:**
+   - Create a new repository on GitHub
+   - Push your code to GitHub
+
+3. **Deploy on Render:**
+   - Go to [Render.com](https://render.com) and sign up/login
+   - Click "New Web Service"
+   - Connect your GitHub repository
+   - Render will automatically detect it's a Node.js app
+   - Set environment variables in Render dashboard:
+     - `NODE_ENV=production`
+     - `DATABASE=your_mongodb_connection_string`
+     - `JWT_SECRET=your_jwt_secret`
+     - `STRIPE_SECRET_KEY=your_stripe_key`
+     - And other required variables from config.env.example
+
+4. **Alternative - Heroku (if you have credits):**
+```bash
 heroku login
-heroku create
-heroku config:set CONFIG_KEY=CONFIG_VALUE
-parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js
-git push heroku master
-heroku open
+heroku create your-app-name
+heroku config:set NODE_ENV=production
+heroku config:set DATABASE=your_mongodb_connection_string
+heroku config:set JWT_SECRET=your_jwt_secret
+git push heroku main
 ```
 
-You can also changed your website url by running this command:
-
-```
-heroku apps:rename Navin-Tours-users
-```
+### Other Free Deployment Options:
+- **Railway.app** - Similar to Render, great for Node.js
+- **Cyclic.sh** - Serverless deployment for Node.js
+- **Vercel** - Great for frontend, limited backend support
 
 ## Build With
 
