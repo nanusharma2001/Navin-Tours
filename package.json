@@ -38,7 +38,8 @@
     "slugify": "^1.5.3",
     "stripe": "^7.0.0",
     "validator": "^13.6.0",
-    "xss-clean": "^0.1.1"
+    "xss-clean": "^0.1.1",
+    "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "eslint": "^7.30.0",
@@ -49,7 +50,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
-    "parcel-bundler": "^1.12.5",
+    
     "prettier": "^2.3.2"
   },
   "engines": {
